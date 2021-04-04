@@ -38,9 +38,6 @@ public class QuestionsListAdapter extends ArrayAdapter<Question> {
 
         View view = layoutInflater.inflate(resource, null, false);
 
-
-        Question question = questionsList.get(position);
-
         return view;
     }
 

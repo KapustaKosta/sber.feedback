@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText = findViewById(R.id.editTextTextPersonName);
                 Intent intent;
-                if (editText.getText().toString().equals("admin")) {
+                if (editText.getText().toString().contains("admin")) {
                     intent = new Intent(LoginActivity.this, AdminMainActivity.class);
                 }
                 else {

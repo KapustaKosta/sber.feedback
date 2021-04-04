@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.raptors.sberfeedback.QuestionsListAdapter;
@@ -16,17 +17,29 @@ public class CreatePollActivity extends AppCompatActivity {
 
     private ListView questionsListView;
     private ArrayList<Question> questions;
+    QuestionsListAdapter questionsListAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_poll);
-        QuestionsListAdapter questionsListAdapter = new QuestionsListAdapter(this, R.layout.question_item, questions);
+        questions = new ArrayList<Question>();
+        questionsListView = findViewById(R.id.questionsListViewPollCreating);
+        questionsListAdapter = new QuestionsListAdapter(this, R.layout.question_item, questions);
         questionsListView.setAdapter(questionsListAdapter);
+        Button btn = findViewById(R.id.button4);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     public void addQuestion(View view)
     {
-        questions.add(null);
+        questions.add(new Question("null"));
+        questionsListAdapter.notifyDataSetChanged();
+        questionsListView.invalidateViews();
     }
 }

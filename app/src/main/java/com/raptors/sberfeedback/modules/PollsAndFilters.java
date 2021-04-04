@@ -6,6 +6,11 @@ public class PollsAndFilters {
     private static ArrayList<Filter> filters;
     private static ArrayList<Poll> polls;
 
+    static {
+        filters = new ArrayList<>();
+        polls = new ArrayList<>();
+    }
+
     public static ArrayList<Filter> getFilters() {
         return filters;
     }

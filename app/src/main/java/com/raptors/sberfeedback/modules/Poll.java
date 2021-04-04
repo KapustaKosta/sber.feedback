@@ -5,9 +5,21 @@ import java.util.ArrayList;
 public class Poll {
     private ArrayList<Filter> filters;
     private ArrayList<Question> questions;
+    private String name;
     private int id;
-
     public int getQuestionsSize() {
         return questions.size();
+    }
+
+    public Poll(String name, ArrayList<Question> questions, ArrayList<Filter> filters) {
+        this.name = name;
+        this.questions = questions;
+        this.filters = filters;
+        id = PollsAndFilters.getPolls().size() + 1;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

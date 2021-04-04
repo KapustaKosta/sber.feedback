@@ -12,10 +12,11 @@ public class PollsAndFilters {
         polls.add(new Poll("ghkl;sd"));
         polls.add(new Poll("ahioghe"));
         ArrayList<Question> questions = new ArrayList<>();
-        questions.add(new Question("question 1"));
-        questions.add(new Question("question 2"));
+        questions.add(new TextQuestion("question 1"));
+        questions.add(new TextQuestion("question 2"));
         ArrayList<Filter> filters = null;
         Poll poll = new Poll("name", questions, filters);
+        polls.add(poll);
     }
 
     public static ArrayList<Filter> getFilters() {

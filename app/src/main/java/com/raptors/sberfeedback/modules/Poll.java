@@ -17,6 +17,10 @@ public class Poll {
         return id;
     }
 
+    public ArrayList<Question> getQuestions() {
+        return questions;
+    }
+
     public int getQuestionsSize() {
         return questions.size();
     }

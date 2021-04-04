@@ -7,7 +7,7 @@ public class TextQuestion extends Question {
     private EditText editText;
     private String answer;
 
-    public TextQuestion(TextView questionTextView, String questionText) {
-        super(questionTextView, questionText);
+    public TextQuestion(String questionText) {
+        super(questionText);
     }
 }

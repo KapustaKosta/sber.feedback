@@ -10,7 +10,7 @@ public class CheckBoxQuestion extends Question {
     private ArrayList<CheckBox> checkBoxes;
     private ArrayList<String> answers;
 
-    public CheckBoxQuestion(TextView questionTextView, String questionText) {
-        super(questionTextView, questionText);
+    public CheckBoxQuestion(String questionText) {
+        super(questionText);
     }
 }

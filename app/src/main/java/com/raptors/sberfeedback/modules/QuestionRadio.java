@@ -12,8 +12,8 @@ public class QuestionRadio extends Question {
     private ArrayList<RadioButton> radioButtons;
     private String answer;
 
-    public QuestionRadio(TextView questionTextView, String questionText) {
-        super(questionTextView, questionText);
+    public QuestionRadio(String questionText) {
+        super(questionText);
     }
 
     public ArrayList<String> getVariants() {

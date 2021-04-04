@@ -10,8 +10,7 @@ public class Question {
         return questionText;
     }
 
-    public Question(TextView questionTextView, String questionText) {
-        this.questionTextView = questionTextView;
+    public Question(String questionText) {
         this.questionText = questionText;
     }
 }

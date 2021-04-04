@@ -11,6 +11,11 @@ public class PollsAndFilters {
         polls = new ArrayList<>();
         polls.add(new Poll("ghkl;sd"));
         polls.add(new Poll("ahioghe"));
+        ArrayList<Question> questions = new ArrayList<>();
+        questions.add(new Question("question 1"));
+        questions.add(new Question("question 2"));
+        ArrayList<Filter> filters = null;
+        Poll poll = new Poll("name", questions, filters);
     }
 
     public static ArrayList<Filter> getFilters() {

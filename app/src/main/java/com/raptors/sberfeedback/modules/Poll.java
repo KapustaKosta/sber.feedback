@@ -6,4 +6,8 @@ public class Poll {
     private ArrayList<Filter> filters;
     private ArrayList<Question> questions;
     private int id;
+
+    public int getQuestionsSize() {
+        return questions.size();
+    }
 }

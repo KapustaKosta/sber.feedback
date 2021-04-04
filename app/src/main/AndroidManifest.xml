@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SberFeedback">
         <activity android:name=".employer.CreatePollActivity"></activity>
-        <activity android:name=".employee.AvailablePollsActivity" />
+        <activity android:name=".employee.AvailablePollsActivity"
+            android:theme="@style/Theme.SberFeedbackMainThemeNoActionBar"/>
         <activity android:name=".LoginActivity"
             android:theme="@style/Theme.SberFeedbackMainThemeNoActionBar">
         <intent-filter>

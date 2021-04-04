@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.raptors.sberfeedback.employee.AvailablePollsActivity;
 import com.raptors.sberfeedback.employer.AdminMainActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
                     intent = new Intent(LoginActivity.this, AdminMainActivity.class);
                 }
                 else {
-                    intent = new Intent(LoginActivity.this, MainActivity.class);
+                    intent = new Intent(LoginActivity.this, AvailablePollsActivity.class);
                 }
                 startActivity(intent);
             }

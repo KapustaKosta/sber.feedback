@@ -28,6 +28,34 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
                 android:text="Добавить фильтр" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите название опроса..."
+                android:inputType="textPersonName" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="493dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#598CD8"
+                android:text="Добавить вариант " />
+
         </LinearLayout>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

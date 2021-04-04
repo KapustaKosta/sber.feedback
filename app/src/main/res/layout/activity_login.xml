@@ -43,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:text="Чтобы участвовать\nв опросах"
                 android:textAlignment="viewStart"
+                android:textColor="#535353"
                 android:textSize="18sp" />
 
             <Space
@@ -86,6 +87,7 @@
                 android:layout_height="58dp"
                 android:background="@drawable/button"
                 android:text="Продолжить"
+                android:textColor="@color/white"
                 android:textAllCaps="true" />
 
         </LinearLayout>

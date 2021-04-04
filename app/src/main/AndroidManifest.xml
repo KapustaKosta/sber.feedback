@@ -12,7 +12,7 @@
         <activity android:name=".employer.CreatePollActivity"></activity>
         <activity android:name=".employee.AvailablePollsActivity" />
         <activity android:name=".LoginActivity"
-            android:theme="@style/Theme.SberFeedbackMainTheme">
+            android:theme="@style/Theme.SberFeedbackMainThemeNoActionBar">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

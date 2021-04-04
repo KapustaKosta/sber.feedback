@@ -21,7 +21,7 @@ import com.raptors.sberfeedback.modules.Question;
 
 import java.util.ArrayList;
 
-public class AnswerQuestionActivity extends Activity {
+public class AnswerQuestionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

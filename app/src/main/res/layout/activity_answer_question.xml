@@ -14,5 +14,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_ready"/>
+        android:id="@+id/button_ready"
+        android:textColor="@color/white"
+        android:text="Готово"/>
 </LinearLayout>

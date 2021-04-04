@@ -11,7 +11,7 @@
         android:theme="@style/Theme.SberFeedback">
         <activity
             android:name=".AnswerQuestionActivity"
-            android:theme="@style/Theme.SberFeedbackTransparentTheme">
+            android:theme="@style/Theme.SberFeedbackMainTheme">
         </activity>
         <activity android:name=".employer.CreatePollActivity" />
         <activity android:name=".employee.AvailablePollsActivity"

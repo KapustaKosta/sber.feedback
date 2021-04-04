@@ -11,13 +11,15 @@
         android:theme="@style/Theme.SberFeedback">
         <activity android:name=".employer.CreatePollActivity"></activity>
         <activity android:name=".employee.AvailablePollsActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Theme.SberFeedbackMainTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 

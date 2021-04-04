@@ -9,6 +9,8 @@ public class PollsAndFilters {
     static {
         filters = new ArrayList<>();
         polls = new ArrayList<>();
+        polls.add(new Poll("ghkl;sd"));
+        polls.add(new Poll("ahioghe"));
     }
 
     public static ArrayList<Filter> getFilters() {

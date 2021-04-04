@@ -28,6 +28,10 @@ public class Poll {
         id = PollsAndFilters.getPolls().size() + 1;
     }
 
+    public Poll(String str) {
+        name = str;
+    }
+
     @Override
     public String toString() {
         return name;

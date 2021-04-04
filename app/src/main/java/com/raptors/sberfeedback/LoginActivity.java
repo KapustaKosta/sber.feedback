@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.raptors.sberfeedback.employer.AdminMainActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -21,8 +23,12 @@ public class LoginActivity extends AppCompatActivity {
                 EditText editText = findViewById(R.id.editTextTextPersonName);
                 Intent intent;
                 if (editText.getText().equals("admin")) {
-                    //intent = new Intent(LoginActivity.this, )
+                    intent = new Intent(LoginActivity.this, AdminMainActivity.class);
                 }
+                else {
+                    intent = new Intent(LoginActivity.this, MainActivity.class);
+                }
+                startActivity(intent);
             }
         });
     }
